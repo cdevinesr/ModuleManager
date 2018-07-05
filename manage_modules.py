@@ -143,7 +143,7 @@ def draw_screen(screen, modules):
         startpos = oldstartpos
 
         if position > oldposition:
-            if position - startpos > rowct:
+            if position - startpos > rowct - 1:
                 startpos = oldstartpos + 1
         elif position == 0:
             startpos = 0
